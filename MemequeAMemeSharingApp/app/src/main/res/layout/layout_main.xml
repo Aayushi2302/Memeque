@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#383838"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDF0EA"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#383838" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.065" />
+
+    <ImageView
+        android:id="@+id/memeImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/imageBottomGuide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageTopGuide"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        app:layout_constraintBottom_toBottomOf="@id/memeImage"
+        app:layout_constraintLeft_toLeftOf="@id/memeImage"
+        app:layout_constraintRight_toRightOf="@id/memeImage"
+        app:layout_constraintTop_toTopOf="@id/memeImage" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDF0EA"
+        android:onClick="shareMeme"
+        android:text="@string/share"
+        android:textColor="#3A3845"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuide"
+        app:layout_constraintLeft_toRightOf="@id/leftGuide"
+        app:layout_constraintRight_toLeftOf="@id/halfway"
+        app:layout_constraintTop_toBottomOf="@+id/reactionBottomGuide" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CDF0EA"
+        android:onClick="nextMeme"
+        android:text="@string/next"
+        android:textColor="#3A3845"
+        app:layout_constraintBottom_toTopOf="@id/bottomGuide"
+        app:layout_constraintLeft_toRightOf="@id/halfway"
+        app:layout_constraintRight_toLeftOf="@id/rightGuide"
+        app:layout_constraintTop_toBottomOf="@+id/reactionBottomGuide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/halfway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reactionBottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageTopGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/imageBottomGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+</androidx.constraintlayout.widget.ConstraintLayout>

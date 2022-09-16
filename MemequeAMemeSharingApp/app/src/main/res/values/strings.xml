@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Memeque - A Meme Sharing App</string>
+    <string name="mainHeading">Memeque</string>
+    <string name="appDescription">A Meme Sharing App</string>
+    <string name="versionNumber">version 1.0.0</string>
+    <string name="share">Share</string>
+    <string name="next">Next</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>
