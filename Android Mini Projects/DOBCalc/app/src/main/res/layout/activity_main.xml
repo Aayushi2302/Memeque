@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:background="@color/bgColor"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_your"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textColor="@color/textBrown"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/bgText"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_minutes"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/textBrown"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/select_date"
+        android:backgroundTint="@color/picker"
+        android:textColor="@color/grey"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="@color/textBrown"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_date"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="@color/textBrown"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/inMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_minutes_till_date"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+
+</LinearLayout>
